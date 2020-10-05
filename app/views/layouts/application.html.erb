@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>RubyOnRails</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+	  
+	 <h3>Ruby</h3>
+	 
+	<%= yield :head %>
+	
+	<hr/>
+	 
+    <%= yield %>
+    
+    <hr/>
+    
+    <%= yield :footer%>
+    
+  </body>
+</html>
